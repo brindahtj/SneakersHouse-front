@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap');
+
+.bg-body{
+
+    background-color: rgba(252, 156, 2, 0.885);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.form{
+    margin-top: 20px;
+    background-color: #fefefe;
+    padding: 40px 60px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+form h1{
+    color: darkorange;
+    text-align: center;
+}
+
+
+/* form .social-media{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+form .social-media p{
+   
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+   
+    border: 1px solid #545454;
+    border-radius: 100%;
+  
+    cursor: pointer;
+}
+
+form p.choose-email{
+    text-align: center;
+}
+
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+form .inputs input[type="email"], input[type="password"],input[type="text"], input[type="email"],input[type="tel"] {
+
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+    
+}
+
+.textarea{
+    border-radius: 5px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 15px;
+
+}
+
+
+.outline:focus{
+    outline:  2px solid darkorange;
+
+}
+
+form p.inscription{
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #878787;
+}
+form p.inscription span{
+    color: #eb8e71;
+}
+
+form button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #e15e0d;
+}
+
+/* Style du bandeau de type "fil info". */
+
+#file-info-banner {
+    display: flex; /* Cela définit le conteneur comme un conteneur flexible, ce qui permet d'aligner les éléments enfants horizontalement. */
+    justify-content: space-around; /* Créer un espacement égal entre les éléments enfants. */
+    overflow: hidden; /* tout contenu dépassant la limite de l'élément sera masqué et ne sera pas visible. */
+    background-color: rgba(252, 156, 2, 0.885);
+    animation: scrollBanner 20s linear infinite; /* On applique l'animation "scrollBanner" pour une durée de 20 secondes. Elle se répète indéfiniment. */
+    white-space: nowrap; /* Cette propriété indique que le texte à l'intérieur de l'élément sera affiché sur une seule ligne sans retour à la ligne. */
+  }
+  
+  /*  On utilise @keyframes pour définir une animation personnalisée. Elle permet de spécifier les étapes clés d'une animation en définissant les styles à différents pourcentages de progression de l'animation.
+   L'animation "scrollBanner" déplace un élément de gauche à droite en utilisant la propriété transform de CSS pour déplacer l'élément horizontalement. Au départ, l'élément est déplacé complètement hors de l'écran vers la droite (translateX(100%)), puis à la fin de l'animation, il est déplacé complètement hors de l'écran vers la gauche (translateX(-100%)). */
+  /* @keyframes scrollBanner {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+
+  #file-info-banner p {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding : 8px;
+    font-size: 20px;
+  }
+  
+  
+/* Style du slider */
+/* Réduire la hauteur du slider */
+/* .carousel {
+    height: 650px; 
+} */
+  /* Rendre le slider plein écran en largeur */
+  /* .carousel-inner {
+    width: 100%;
+  } */
+  
+  /* Redimensionner les images du slider */
+  /* On définit la hauteur des images à 100% de la hauteur de leurs conteneurs. 
+  La valeur "cover" ajuste les images à l'intérieur des conteneurs sans déformation, en les agrandissant ou en les réduisant de manière proportionnelle. Cela permet que les images occupent tout l'espace disponible dans chaque élément du slider sans être déformées. */
+  .carousel-inner .carousel-item img {
+    height: 100%; 
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    color: red !important;
+    font-size: 30px; 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombre avec une couleur et un flou */
+    padding: 10px; /* Espacement interne autour du contenu de la légende */
+    border-radius: 10px;
+    top: 5%; /* position de l'enfant par rapport au parent*/
+   width: 55vw; /* 55% de la largeur du parent*/
+    right: 60% !important; /* position de l'enfant par rapport au parent*/
+    height: 20vh; /*35% de la hauteur du parent*/
+    transform: translateX(-25%); /* L'élément sera déplacé de 25% de sa largeur vers la gauche. Par exemple, si l'élément a une largeur de 100 pixels, il sera déplacé de 25 pixels vers la gauche. */  
+  }
+  
+  
+    /* Ce style définit la mise en page et le style visuel pour la section "Produits en vedette". Il comprend des styles pour le conteneur, le titre de section, la grille de produits, chaque produit individuel avec son image, titre, prix et bouton. */
+    .featured-products {
+        padding: 80px ;
+        background-color: #f5f5f5;
+    }
+
+    .featured-products .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 36px !important;
+        margin-bottom: 40px !important;
+    }
+    .featured-products .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .featured-products .product {
+        background-color: #fff;
+        padding: 30px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .featured-products .product img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .featured-products .product-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .featured-products .product-price {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .featured-products .product-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #e15e0d; 
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .featured-products .product-button:hover {
+        background-color: #555;
+    }
+
+    /* Ce style définit la mise en page et le style visuel pour la section "Dernières actualités". Il comprend des styles pour le conteneur, le titre de section, la grille d'articles d'actualités, chaque article individuel avec son image, titre, date et lien "Lire la suite". */
+    .latest-news {
+        padding: 80px 0;
+        background-color: #f5f5f5;
+    }
+
+    .latest-news .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+
+    .latest-news .news-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .latest-news .news-article {
+        background-color: #fff;
+        padding: 30px;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .latest-news .news-article img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .latest-news .news-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .latest-news .news-date {
+        font-size: 16px;
+        color: #888;
+        margin-bottom: 20px;
+    }
+
+    .latest-news .news-link {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #e15e0d;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .latest-news .news-link:hover {
+        background-color: #555;
+    }
+
+    /* Ce style définit la mise en page et le style visuel pour la section "Abonnez-vous à notre newsletter". Il comprend des styles pour le conteneur, le titre de section, le formulaire d'abonnement avec un champ de saisie d'e-mail et un bouton d'abonnement.  */
+    .subscribe {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+    }
+
+    .subscribe .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+
+    .subscribe-form input[type="email"] {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+    .subscribe-form button {
+        padding: 10px 20px;
+        background-color: #e15e0d;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .subscribe-form button:hover {
+        background-color: #555;
+    }
+
+
+/* Style pour la partie shop by brand */
+.shop-by-brand {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.shop-by-brand h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+/* Style du bandeau de type "fil info". */
+
+#file-info-banner {
+    display: flex; /* Cela définit le conteneur comme un conteneur flexible, ce qui permet d'aligner les éléments enfants horizontalement. */
+    justify-content: space-around; /* Créer un espacement égal entre les éléments enfants. */
+    overflow: hidden; /* tout contenu dépassant la limite de l'élément sera masqué et ne sera pas visible. */
+    background-color: rgba(252, 156, 2, 0.885);
+    animation: scrollBanner 10s linear infinite; /* On applique l'animation "scrollBanner" pour une durée de 20 secondes. Elle se répète indéfiniment. */
+    white-space: nowrap; /* Cette propriété indique que le texte à l'intérieur de l'élément sera affiché sur une seule ligne sans retour à la ligne. */
+    width: 1000px;
+  }
+  
+  /*  On utilise @keyframes pour définir une animation personnalisée. Elle permet de spécifier les étapes clés d'une animation en définissant les styles à différents pourcentages de progression de l'animation.
+   L'animation "scrollBanner" déplace un élément de gauche à droite en utilisant la propriété transform de CSS pour déplacer l'élément horizontalement. Au départ, l'élément est déplacé complètement hors de l'écran vers la droite (translateX(100%)), puis à la fin de l'animation, il est déplacé complètement hors de l'écran vers la gauche (translateX(-100%)). */
+  @keyframes scrollBanner {
+    0% {
+      transform: translateX(60%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  #file-info-banner p {
+    margin-top: 10px;
+    margin-right: 20px;
+    padding : 8px;
+    font-size: 20px;
+  }
+  
+  
+
+

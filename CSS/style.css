@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap');
+.bordureRouge{border: 3px solid red; padding: 10px;}
+.bordureVerte{border: 3px solid green; padding: 10px;}
+.bordureBleue{border: 3px solid blue; padding: 10px;}
+.bordureJaune{border: 3px solid yellow; padding: 10px;}
+.bordureOrange{border: 3px solid #e15e0d; padding: 10px;}
+
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+.bg-body{
+    background-color: #fc9c02e0 !important;
+}
+.bg-orange{
+    background-color: #FCA71E;
+}
+
+.bg-white{
+    background-color: white;
+}
+.bg-lightgrey{
+    background-color: #fefefe !important;
+}
+.padtop-2px{
+    padding-top: 2px !important;
+}
+
+.headerheight{
+    min-height: 50px;
+}
+
+.footerheight{
+    min-height:50px;
+}
+
+.logo{
+    width: 100px;
+    height:100px;
+}
+
+a{
+    text-decoration: none;
+    color: #eb8e71
+}
+
+a:hover{
+    color: #1a1a19;  
+}
+
+.nav-link{
+    color: #1a1a19 !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    font-size: small !important;
+    letter-spacing: 1.5px !important;
+    
+}
+
+
+.search-bar{
+    font-size: smaller !important;
+    letter-spacing: 1.5px !important;
+}
+
+
+
+.dropdown-item{
+    font-size: small;
+    letter-spacing: 1.5px;
+}
+
+.icone{
+    color: #1a1a19;
+}
+.img-icone{
+width: 20px;
+
+}
+
+
+
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .fa-search {
+    font-size: 20px;
+    color: #555;
+  }
+
+.btn-orange{
+    background-color: #e15e0d;
+    border:1px solid #e15e0d;
+    text-align: center;
+    color: white;
+    
+}
+.btn-orange:hover{
+    border:1px solid #e15e0d;
+    background-color:white;
+    color: #e15e0d;
+
+}
+.prixbarre{
+    text-decoration: line-through;
+}
+
+ ul li{
+    list-style: none;
+}
+
+
+
+.produits{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+}
+.input {
+  
+    margin: 1rem 0;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;   
+}
+
+.inputform{
+    border-radius: 20px;
+
+}
+
+
+.title{
+    color: darkorange;
+    text-align: center;
+}
+.text-darkorange{
+    color: darkorange;
+
+
+}
+form .social-media p{
+   
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+   
+    border: 1px solid #545454;
+    border-radius: 100%;
+  
+    cursor: pointer;
+}
+form button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #e15e0d;
+}
+.border{
+    border-radius: 8px;
+    border: #555 solid 1px;
+}
+.border-top{
+
+    border-top: #555 solid 1px;
+}
+.hover:hover{
+    border: none;
+    box-shadow: 2px 2px 4px black;
+    transform: scale(1.01);
+}
+
+.center{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.bg-red{
+    background-color: #ff283a;
+}
+
+.smalltext{
+    font-size: 14px;
+    
+    
+}
+.magasin {
+    display: flex;
+    justify-content: center;
+}
+.text-invalid {
+    
+    color: #ff283a !important;
+    font-size: small !important;
+}
+
+
+.invalid {
+    border: 3px solid #ff283a !important;
+}
+
+.valid {
+    border: 3px solid #24a524 !important;
+}
+
+.img-resize{
+    width: 100px !important;
+    height: auto !important;
+}
+
+.size-page{
+    height: 1000px;
+}
+.barre {
+    color:grey !important;
+    text-decoration: line-through !important;
+  }
+
+.img-catalogue{
+    
+    width:100% !important; 
+    height:15vw !important; 
+    object-fit:cover !important;
+}
+.img-produit{
+    width: 100%;
+}
+.btn-size{
+    width: 50%;
+    display: flex;
+    justify-self:center ;
+}
+.logobrand{
+    width: 30%;
+}
+.grey{
+    color:grey !important; 
+}
+.image-clignote  {
+    width: 5cm;
+   animation-duration: 2.8s;
+   animation-name: clignoter;
+   animation-iteration-count: infinite;
+   transition: none;
+}
+@keyframes clignoter {
+  0%   { opacity:1; }
+  40%   {opacity:0; }
+  100% { opacity:1; }
+}
